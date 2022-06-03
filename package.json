@@ -2,6 +2,11 @@
   "name": "github-repo-finder",
   "version": "0.1.0",
   "private": true,
+  "author": {
+    "name": "Bruno Aderaldo",
+    "email": "brunoaderaldo10@gmail.com",
+    "url": "https://brunoaderaldo.com/"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
