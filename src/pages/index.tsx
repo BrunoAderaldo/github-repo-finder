@@ -1,10 +1,11 @@
 import type { NextPage } from "next";
 
+import Intro from "@/components/intro";
+
 const Home: NextPage = () => {
   return (
     <>
-      <h1>GitHub Repo Finder</h1>
-      <p>Search for repositories</p>
+      <Intro />
     </>
   );
 };
