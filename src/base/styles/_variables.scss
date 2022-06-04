@@ -1,0 +1,61 @@
+// ~~~~~~~~~~~~~ 1. Colors ~~~~~~~~~~~~~
+
+// Primary colours
+$primary-120: #53181f;
+$primary-100: #781a25;
+$primary-80: #a96d74;
+$primary-60: #ceadb0;
+$primary-40: #e9dadc;
+$primary-20: #faf6f6;
+
+// Secondary colours
+$secondary-120: #211b1a;
+$secondary-100: #3b2f2e;
+$secondary-80: #635e5d;
+$secondary-60: #b8b4b4;
+$secondary-40: #e0dedd;
+$secondary-20: #f6f6f6;
+
+// Other colours
+$border: #f6f7f8;
+$white: #fff;
+
+// ~~~~~~~~~~~~~ 2. Fonts ~~~~~~~~~~~~~
+
+// Font families
+$font-primary: grotesk, sans-serif;
+$font-secondary: poppins, sans-serif;
+
+// Font weights
+$font-regular: 400;
+$font-semibold: 600;
+$font-bold: 700;
+
+// Font sizes
+$font-xxs: rem(14px);
+$font-xs: rem(16px);
+$font-s: rem(20px);
+$font-m: rem(24px);
+$font-l: rem(28px);
+$font-xl: rem(32px);
+$font-xxl: rem(40px);
+$font-xxxl: rem(72px);
+
+// Line heights
+$line-height-small: 100%;
+$line-height-medium: 125%;
+$line-height-big: 160%;
+
+// ~~~~~~~~~~~~~ 3. Spacings ~~~~~~~~~~~~~
+
+// Margins and paddings
+$spacing-xxxxs: rem(8px);
+$spacing-xxxs: rem(16px);
+$spacing-xxs: rem(24px);
+$spacing-xs: rem(32px);
+$spacing-s: rem(40px);
+$spacing-m: rem(48px);
+$spacing-l: rem(56px);
+$spacing-xl: rem(64px);
+$spacing-xxl: rem(96px);
+$spacing-xxxl: rem(128px);

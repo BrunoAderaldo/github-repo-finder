@@ -1,0 +1,15 @@
+// Breakpoints
+$breakpoints: (
+  mobile: rem(375px),
+  tablet: rem(768px),
+  tablet-big: rem(1024px),
+  laptop: rem(1200px),
+  laptop-big: rem(1366px),
+  desktop: rem(1440px),
+);
+
+@mixin media($device) {
+  @media only screen and (min-width: #{map-get($breakpoints, $device)}) {
+    @content;
+  }
+}

@@ -1,0 +1,35 @@
+@use "sass:list";
+
+@mixin font-face(
+  $name,
+  $path,
+  $weight: $font-regular,
+  $style: normal,
+  $extensions: woff2 woff
+) {
+  $src: null;
+
+  @each $extension in $extensions {
+    $src: list.append(
+      $src,
+      url("/#{$path}.#{$extension}") format("#{$extension}"),
+      comma
+    );
+  }
+
+  @font-face {
+    font-family: $name;
+    font-style: $style;
+    font-weight: $weight;
+    src: $src;
+  }
+}
+
+// Grotesk
+@include font-face(Grotesk, "fonts/poppins/poppins-regular");
+@include font-face(Grotesk, "fonts/grotesk/grotesk-semibold", $font-semibold);
+@include font-face(Grotesk, "fonts/grotesk/grotesk-bold", $font-bold);
+
+// Poppins
+@include font-face(Poppins, "fonts/poppins/poppins-regular");
+@include font-face(Poppins, "fonts/poppins/poppins-semibold", $font-semibold);
