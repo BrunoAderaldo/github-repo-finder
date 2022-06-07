@@ -1,0 +1,13 @@
+overwrite: true
+schema:
+  - https://api.github.com/graphql:
+      headers:
+        Authorization: ${NEXT_PUBLIC_BEARER_TOKEN}
+generates:
+  ./src/lib/types/githubTypes.d.ts:
+    plugins:
+      - "typescript"
+      - "fragment-matcher"
+      - "typescript-react-apollo"
+      - "typescript-operations"
+      - "typescript-document-nodes"
