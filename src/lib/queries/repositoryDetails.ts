@@ -36,7 +36,7 @@ const repositoryDetails = gql`
         totalCount
       }
       openGraphImageUrl
-      readme: object(expression: "master:README.md") {
+      readme: object(expression: "main:README.md") {
         ... on Blob {
           text
         }
