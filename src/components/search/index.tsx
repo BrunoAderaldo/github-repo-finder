@@ -10,7 +10,7 @@ export default function Search({ setSearchTerm }: SearchProps) {
   return (
     <input
       type="text"
-      placeholder="Try BrunoAderaldo"
+      placeholder="Try Bejamas"
       onChange={(e) => setSearchTerm(e.target.value)}
       className={styles.search}
     />

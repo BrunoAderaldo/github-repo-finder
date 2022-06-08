@@ -1,4 +1,5 @@
 import { useQuery } from "@apollo/client";
+import { useDebounce } from "use-debounce";
 
 import { SearchResultItemEdge } from "@/lib/types/githubTypes";
 import searchRepositories from "@/lib/queries/searchRepositories";
@@ -11,10 +12,11 @@ interface SearchResultsProps {
 }
 
 export default function SearchResults({ searchTerm }: SearchResultsProps) {
+  const [debouncedSearchTerm] = useDebounce(searchTerm, 500);
+
   const { loading, error, data } = useQuery(searchRepositories, {
     variables: {
-      // TODO: Add use-debounce
-      search_term: searchTerm,
+      search_term: debouncedSearchTerm,
     },
   });
 
