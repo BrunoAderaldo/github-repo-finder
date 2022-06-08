@@ -4,6 +4,8 @@ import { SearchResultItemEdge } from "@/lib/types/githubTypes";
 import searchRepositories from "@/lib/queries/searchRepositories";
 import RepositoryItem from "./repositoryItem";
 
+import styles from "./searchResults.module.scss";
+
 interface SearchResultsProps {
   searchTerm?: string;
 }
@@ -20,7 +22,7 @@ export default function SearchResults({ searchTerm }: SearchResultsProps) {
   if (error) return <p>Error: error(</p>;
 
   return (
-    <div>
+    <div className={styles.results}>
       {data?.search?.edges.map(({ node }: SearchResultItemEdge) => {
         if (!node?.id) return;
 

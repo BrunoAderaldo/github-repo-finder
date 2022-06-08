@@ -19,6 +19,8 @@ $secondary-20: #f6f6f6;
 // Other colours
 $border: #f6f7f8;
 $white: #fff;
+$owner: #7e7e7e;
+$description: #363636;
 
 // ~~~~~~~~~~~~~ 2. Fonts ~~~~~~~~~~~~~
 
@@ -59,3 +61,12 @@ $spacing-l: rem(56px);
 $spacing-xl: rem(64px);
 $spacing-xxl: rem(96px);
 $spacing-xxxl: rem(128px);
+
+// Shadows (Next-UI)
+$shadow-xs: 0 2px 8px 1px rgb(104 112 118 / 0.07),
+  0 1px 1px -1px rgb(104 112 118 / 0.04);
+$shadow-sm: 0 2px 8px 2px rgb(104 112 118 / 0.07),
+  0 2px 4px -1px rgb(104 112 118 / 0.04);
+$shadow-md: 0 12px 20px 6px rgb(104 112 118 / 0.08);
+$shadow-lg: 0 12px 34px 6px rgb(104 112 118 / 0.18);
+$shadow-xl: 0 25px 65px 0px rgb(104 112 118 / 0.35);

@@ -1,0 +1,29 @@
+.card {
+  background-color: rgba(230, 232, 235, 0.7);
+  padding: $spacing-xxxs;
+  border-radius: rem(8px);
+  word-break: break-word;
+  box-shadow: $shadow-sm;
+}
+
+.title {
+  display: block;
+  font-size: $font-s;
+  text-decoration: none;
+  font-weight: $font-semibold;
+  letter-spacing: rem(-0.5px);
+  line-height: $line-height-small;
+  margin-bottom: $spacing-xxxxs;
+}
+
+.owner {
+  display: block;
+  font-size: $font-xxs;
+  color: $owner;
+  margin-bottom: $spacing-xxxs;
+}
+
+.description {
+  font-size: $font-xxs;
+  color: $description;
+}

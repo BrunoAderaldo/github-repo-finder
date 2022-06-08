@@ -1,2 +1,14 @@
-.input {
+.search {
+  display: block;
+  background-color: rgba(230, 232, 235, 0.7);
+  border: 0;
+  border-radius: $spacing-xxxxs;
+  margin-bottom: $spacing-xxs;
+  // height: $spacing-xs;
+  width: 100%;
+  padding: $spacing-xxxxs $spacing-xxxs;
+
+  &:focus-visible {
+    outline: none;
+  }
 }
